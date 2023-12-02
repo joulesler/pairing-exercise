@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "5ee0ab4b-7140-45b6-aa38-cfa2306dd9a5",
+		"name": "Pairing-Exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6546781",
+		"_collection_link": "https://planetary-satellite-894878.postman.co/workspace/matching-engine~1893789d-558c-429b-8cff-093642d20ba1/collection/6546781-5ee0ab4b-7140-45b6-aa38-cfa2306dd9a5?action=share&source=collection_link&creator=6546781"
+	},
+	"item": [
+		{
+			"name": "transactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"FL_ACCOUNT\" : 123456,\r\n        \"FL_AMOUNT\"  : 123,\r\n        \"FL_CURRENCY\": \"SGD\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/account/transactions",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"account",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\": {\r\n        \"currency\" : \"SGD\",\r\n        \"amount\" : 123.45\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/12345",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"12345"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
