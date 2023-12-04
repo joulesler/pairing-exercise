@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start-dev": "SET NODE_ENV=dev && node ./bin/www",
+    "start-dev-server": "export NODE_ENV=dev && node ./bin/www",
     "tests": "mocha ./test/**"
   },
   "dependencies": {
